@@ -33,8 +33,9 @@ const ProductForm = (props) => {
       setProductData({
         ...productData,
         [field]: data,
+        
       });
-  
+      console.log(field);
       console.log(productData);
     };
   
@@ -67,7 +68,7 @@ const ProductForm = (props) => {
       setIsVisible(false);
       setProductData(initialProductState);
     };
-  
+    
     return (
       <div>
         <Dialog
@@ -90,12 +91,12 @@ const ProductForm = (props) => {
             </div>
             <br />
             <div className="p-float-label">
-              <InputNumber
+                <InputNumber
                 value={productData.price}
-                onChange={(e) => updateField(e.target.value, "price")}
+                onChange={(e) => updateField(e.value,"price")}           
                 mode="currency"
                 currency="USD"
-              />
+                />
               <label>Precio:</label>
             </div>
             <br />

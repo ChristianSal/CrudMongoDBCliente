@@ -1,5 +1,4 @@
-import React, {createContext, useState} from 'react';
-import { useEffect } from 'react';
+import React, {createContext, useState, useEffect} from 'react';
 import {ProductService} from '../services/ProductServices';
 
 export const ProductContext = createContext();
