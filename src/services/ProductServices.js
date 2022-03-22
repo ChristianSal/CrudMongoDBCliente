@@ -8,7 +8,7 @@ export class ProductService{
         return axios.post(this.baseUrl+"product/",product).then(res =>res.data);
     }
 
-    readAll(product){
+    readAll(){
         return axios.get(this.baseUrl).then(res =>res.data);
     }
 
@@ -16,7 +16,7 @@ export class ProductService{
         return axios.put(this.baseUrl+"product/"+product._id,product).then(res =>res.data);
     }
 
-    delete(product){
+    delete(id){
         return axios.delete(this.baseUrl+"product/"+id).then(res =>res.data);
     }
 }
