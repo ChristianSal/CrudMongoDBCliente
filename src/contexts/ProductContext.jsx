@@ -8,7 +8,7 @@ const ProductContextProvider = (props) => {
 
     const productService = new ProductService();
 
-    const [products, setproducts] = useState([]);
+    const [products, setProducts] = useState([]);
 
     const [editProduct, setEditProduct] = useState(null);
 
